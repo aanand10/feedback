@@ -4,6 +4,7 @@ import { Post } from "./components/Post";
 import { BackToQuestions } from "./components/BackToQuestions";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
+import Fab from "./components/Fab";
 
 function App() {
 	return (
@@ -15,7 +16,8 @@ function App() {
 				<FilterBar />
 				<UserComments />
 			</div>
-			<div className='fixed bottom-10 right-10'>
+			<Fab />
+			{/* <div className='fixed bottom-10 right-10'>
 				<button className=' rounded-full w-16 h-16 flex justify-center items-center  bg-[#F8F8F8]'>
 					<svg
 						width='32'
@@ -67,7 +69,7 @@ function App() {
 						</defs>
 					</svg>
 				</button>
-			</div>
+			</div> */}
 		</main>
 	);
 }
