@@ -1,0 +1,23 @@
+[
+  {
+    "id": 2,
+    "label": "Report an issue",
+    "title": "Let us know about the Issue you are facing right now!",
+    "elements": {
+      "dropdown": {
+        "title": "Choose a section",
+        "isPresent": true,
+        "options": ["a", "b", "c", "d"]
+      },
+      "textarea": {
+        "isPresent": true,
+        "attachBtn": true,
+        "title": "Describe the issue"
+      },
+      "input": {
+        "title": "Enter your email",
+        "isPresent": true
+      }
+    }
+  }
+]
