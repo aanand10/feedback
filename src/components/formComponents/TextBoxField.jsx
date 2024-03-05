@@ -7,6 +7,7 @@ const TextBoxField = ({ label }) => {
 	const [files, setFiles] = useState([]);
 	const [isSubmitEnabled, setIsSubmitEnabled] = useState(false);
 	const fileInputRef = useRef(null);
+	const isSubmitted = () => {};
 
 	return (
 		<div className='w-full text-[#4D4D4D]  font-medium text-lg  rounded-lg '>

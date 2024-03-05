@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Dropdown from "./formComponents/Dropdown";
 import { RxCross2 } from "react-icons/rx";
 import TextBoxField from "./formComponents/TextBoxField";
-const FabCard = () => {
+const FabCard = ({}) => {
 	const [file, setFile] = useState(null);
 
 	const handleFileChange = (e) => {
@@ -63,6 +63,18 @@ const FabCard = () => {
 				</div>
 			</div> */}
 			<TextBoxField label='Describe the issue in detail' />
+			<div className='w-full'>
+				<label className='text-lg font-Poppins font-medium text-[#4D4D4D]'>
+					Enter your email to receive an update
+				</label>
+				<input
+					type='email'
+					name='email'
+					id='email'
+					className='w-full bg-transparent border border-[#CCCCCC] rounded-lg px-4 py-3 text-lg font-Poppins font-medium text-[#808080]'
+					placeholder='Enter your email'
+				/>
+			</div>
 		</div>
 	);
 };

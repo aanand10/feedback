@@ -121,8 +121,8 @@ const Fab = () => {
 	return (
 		<>
 			<div className='fixed bottom-24 right-8'>
-				{isFabOpen ? (
-					// <FabCard selectedOption={selectedOption} />
+				{selectedOption ? <FabCard selectedOption={selectedOption} /> : null}
+				{isFabOpen || selectedOption ? (
 					<div className='flex flex-col gap-2 w-full'>
 						{options.map((option) => (
 							<div
@@ -160,7 +160,10 @@ const Fab = () => {
 					borderColor: isFabOpen ? "#808080" : "transparent", // Border color for ellipse
 					overflow: "hidden", // Ensure overflow doesn't show when ellipse is applied
 				}}
-				onClick={() => dispatch(setIsFabOpen(!isFabOpen))}>
+				onClick={() => {
+					dispatch(setIsFabOpen(!isFabOpen));
+					selectedOption ? setSelectedOption(null) : null;
+				}}>
 				{isFabOpen ? (
 					<FiX className='w-8 h-8' style={{ color: "#0F0F0F" }} /> // Icon color change
 				) : (

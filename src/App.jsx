@@ -6,6 +6,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Fab from "./components/Fab";
 import { useSelector } from "react-redux";
+import FabCard from "./components/FabCard";
 
 function App() {
 	const isFabOpen = useSelector((state) => state.user.isFabOpen);
@@ -22,6 +23,7 @@ function App() {
 				<div className='lg:hidden  fixed inset-0 bg-black bg-opacity-70 ' />
 			)}
 			<Fab />
+			{/* <FabCard /> */}
 		</main>
 	);
 }
