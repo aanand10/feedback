@@ -3,10 +3,10 @@ import React from "react";
 const Navbar = () => {
 	return (
 		<nav className='py-4 px-5 shadow-md shadow-[#ffffff52]'>
-			<div className='flex justify-between items-center'>
-				<div className='text-white font-semibold uppercase leading-4 text-xl lg:text-2xl'>
+			<div className='flex items-center justify-between'>
+				<div className='text-xs font-semibold leading-4 text-white uppercase lg:text-2xl'>
 					The{" "}
-					<span className='text-black font-Montserrat p-1 bg-white'>
+					<span className='p-1 text-black bg-white font-Montserrat'>
 						Product
 					</span>{" "}
 					Platform
@@ -50,7 +50,7 @@ const Navbar = () => {
 
 					<div className='relative'>
 						<img src='./image.png' className='w-12 rounded-full' alt='' />
-						<div className='absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden lg:block'>
+						<div className='absolute right-0 hidden w-48 mt-2 bg-white rounded-md shadow-lg lg:block'>
 							{/* <!-- User profile content --> */}
 						</div>
 					</div>
