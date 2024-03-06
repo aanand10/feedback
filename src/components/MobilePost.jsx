@@ -1,7 +1,8 @@
 import { IoMdText } from "react-icons/io";
 
 import React from "react";
-export function MobilePost({ rocketIcon, eyeIcon }) {
+import { eyeIcon, rocketIcon } from "../assets/Icons/icons";
+export function MobilePost() {
 	return (
 		<section className=' max-w-4xl  m-4  bg-[#F8F8F8] border  border-[#717171] rounded-lg'>
 			<div className='flex items-center justify-between w-full px-4 py-4'>
