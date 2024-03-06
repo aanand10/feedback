@@ -3,19 +3,16 @@ import Dropdown from "../formComponents/Dropdown";
 import TextBoxField from "../formComponents/TextBoxField";
 import Cookies from "js-cookie";
 
-const SuggestionCard = () => {
+const FeedbackCard = () => {
 	// const [files, setFiles] = useState([]);
 	const isUserLoggedIn = Cookies.get("isUserLoggedIn");
 	const options = [
-		"Select",
 		"Concept cards",
 		"Interview Questions",
 		"Practice Questions",
 		"Quizzes",
 	];
-	// const [files, setFiles] = useState([]);
-	// const fileInputRef = useRef(null);
-	const [selectedOption, setSelectedOption] = useState("Select");
+	const [selectedOption, setSelectedOption] = useState("Interview Questions");
 	const [message, setMessage] = useState("");
 	const [email, setEmail] = useState("");
 	console.log(message, selectedOption, email, "isUserLoggedIn");
@@ -40,8 +37,8 @@ const SuggestionCard = () => {
 		<div className='lg:fixed lg:bottom-24 lg:right-8 max-w-[25rem] w-full lg:w-[25rem] flex flex-col justify-center items-center bg-[#F8F8F8] px-4 pt-6 rounded-lg shadow-xl shadow-[#00000029] gap-6 '>
 			<div className='flex justify-center w-full items-center border-b-2 border-[#CCCCCC]'>
 				<h3 className='text-xl font-Poppins px-4 pb-6 text-center font-semibold text-[#4D4D4D] '>
-					Share your <span className='font-bold text-black'>Suggestions</span>{" "}
-					with us for a chance to earn rewards!
+					Let us know your{" "}
+					<span className='font-bold text-black'>Feedback</span> about us!
 				</h3>
 			</div>
 			<div className='w-full '>
@@ -95,4 +92,4 @@ const SuggestionCard = () => {
 	);
 };
 
-export default SuggestionCard;
+export default FeedbackCard;

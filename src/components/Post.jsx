@@ -142,7 +142,7 @@ export function Post({}) {
 					cursus se?
 				</p>
 			</div>
-			<div className='px-10 py-5 flex justify-between items-center'>
+			<div className='px-10 pb-5 flex justify-between items-center'>
 				<div className='flex items-center gap-2'>
 					<svg
 						width='24'

@@ -3,19 +3,16 @@ import Dropdown from "../formComponents/Dropdown";
 import TextBoxField from "../formComponents/TextBoxField";
 import Cookies from "js-cookie";
 
-const SuggestionCard = () => {
+const ReportAnIssueCard = () => {
 	// const [files, setFiles] = useState([]);
 	const isUserLoggedIn = Cookies.get("isUserLoggedIn");
 	const options = [
-		"Select",
 		"Concept cards",
 		"Interview Questions",
 		"Practice Questions",
 		"Quizzes",
 	];
-	// const [files, setFiles] = useState([]);
-	// const fileInputRef = useRef(null);
-	const [selectedOption, setSelectedOption] = useState("Select");
+	const [selectedOption, setSelectedOption] = useState("Interview Questions");
 	const [message, setMessage] = useState("");
 	const [email, setEmail] = useState("");
 	console.log(message, selectedOption, email, "isUserLoggedIn");
@@ -95,4 +92,4 @@ const SuggestionCard = () => {
 	);
 };
 
-export default SuggestionCard;
+export default ReportAnIssueCard;
